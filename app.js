@@ -11,7 +11,7 @@ console.log(AC_SSID)
 const client = require('twilio')(AC_SSID, AauthToken);
 app.post('/try',(req,res)=>{
     console.log(req.body);
-    res.end();
+    res.send('app is running ');
 })
 app.post('/Send',(req,res)=>{
 client.messages.create({
