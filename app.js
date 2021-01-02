@@ -9,8 +9,8 @@ const AauthToken = '59b5c1bc07f491f1eb736972ffbae8a6';
 //const phone_number = "+12566854272";
 console.log(AC_SSID)
 const client = require('twilio')(AC_SSID, AauthToken);
-app.post('/try',(req,res)=>{
-    console.log(req.body);
+app.get('/try',(req,res)=>{
+    //console.log(req.body);
     res.send('app is running ');
 })
 app.post('/Send',(req,res)=>{
