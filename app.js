@@ -4,8 +4,8 @@ require('dotenv').config();
 app.use(express.json());
 app.use(express.static('public'))
 const port = process.env.PORT || 3000;
-const AC_SSID = process.env.AC_SSID;
-const AauthToken = process.env.AauthToken;
+const AC_SSID = "ACcd6bfeb025f9adbcdb36f189f8278f31";
+const AauthToken = '59b5c1bc07f491f1eb736972ffbae8a6';
 //const phone_number = "+12566854272";
 console.log(AC_SSID)
 const client = require('twilio')(AC_SSID, AauthToken);
