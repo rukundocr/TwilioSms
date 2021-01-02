@@ -5,7 +5,7 @@ app.use(express.json());
 app.use(express.static('public'))
 const port = process.env.PORT || 3000;
 const AC_SSID = process.env.AC_SSID;
-const AauthToken = process.env.AauthToken; // put here your auth token 
+const AauthToken = process.env.AauthToken;
 //const phone_number = "+12566854272";
 console.log(AC_SSID)
 const client = require('twilio')(AC_SSID, AauthToken);
