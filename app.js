@@ -14,6 +14,7 @@ app.get('/try',(req,res)=>{
     res.send('app is running ');
 })
 app.post('/Send',(req,res)=>{
+    console.log("request received");
 client.messages.create({
     body:req.body.message,
     to:req.body.phone,
@@ -21,7 +22,7 @@ client.messages.create({
 }).then(response =>{
 console.log(response);
 res.json({
-    message:`message sent to ${response.to}`,
+    message:`message sent to `,
     status:"Message sent"
 })
 })
